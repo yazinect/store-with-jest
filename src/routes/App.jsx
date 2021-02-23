@@ -6,7 +6,7 @@ import Layout from '../components/Layout';
 import NotFound from '../containers/NotFound';
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename="/store-with-jest">
     <Layout>
       <Switch>
         <Route exact path="/" component={Home} />
