@@ -11,5 +11,6 @@ describe('Fetching API', () => {
       .then((response) => {
         expect(response.data).toEqual('12345');
       });
+    expect(fetch.mock.calls).toEqual([['https://google.com']]);
   });
 });
